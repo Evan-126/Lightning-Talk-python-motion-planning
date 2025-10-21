@@ -45,16 +45,16 @@ pip install python-motion-planning==2.0.dev1
 2. **Ensure all dependencies are installed.**
 3. **Run your desired script** (see Code Overview) using Python:
 
-#### I need to put more stuff here ####
-
 ```
 import python_motion_planning as pmp
-
+```
 # Create a grid-based environment (51x31 cells)
+```
 env = pmp.Grid(51, 31)
 obstacles = env.obstacles
-
+```
 # Add obstacles (discrete points)
+```
 for i in range(10, 21):
 obstacles.add((i, 15))
 for i in range(15):
@@ -64,13 +64,15 @@ obstacles.add((30, i))
 for i in range(16):
 obstacles.add((40, i))
 env.update(obstacles)
-
+```
 # Plan with A*
+```
 planner = pmp.AStar(start=(5, 5), goal=(45, 25), env=env)
 cost, path, expand = planner.plan()
 planner.plot.animation(path, str(planner), cost, expand)
-
+```
 # Create a map (rectangle + circle obstacles)
+```
 env = pmp.Map(51, 31)
 obs_rect = [
     [14, 12, 8, 2],
@@ -86,8 +88,9 @@ obs_circ = [
     [37, 23, 3]
 ]
 env.update(obs_rect=obs_rect, obs_circ=obs_circ)
-
+```
 # Plan with RRT
+```
 planner = pmp.RRT(start=(18, 8), goal=(37, 18), env=env)
 cost, path, expand = planner.plan()
 planner.plot.animation(path, str(planner), cost, expand)
