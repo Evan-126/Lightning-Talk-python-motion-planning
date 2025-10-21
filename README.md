@@ -20,7 +20,7 @@ This repository demonstrates Python-based grid and map path planning using the *
 
 ## Requirements
 
-- **Python 3.10** or compatible version
+- **Python >= 3.6**
 - `python_motion_planning` v2.0.dev1
 
 **Recommended install method:** [conda](https://docs.conda.io/en/latest/)
