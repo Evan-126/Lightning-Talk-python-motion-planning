@@ -21,7 +21,7 @@ This repository demonstrates Python-based grid and map path planning using the *
 ## Requirements
 
 - **Python >= 3.6**
-- `python_motion_planning` v2.0.dev1
+- `python_motion_planning` v1.1.1
 
 **Recommended install method:** [conda](https://docs.conda.io/en/latest/)
 
@@ -41,9 +41,9 @@ pip install python-motion-planning==2.0.dev1
 
 ## How to Run
 
-1. **Clone or download this repo.**
+1. **Clone or download this repo (Code --> Download .zip).**
 2. **Ensure all dependencies are installed.**
-3. **Run your desired script** (see Code Overview) using Python:
+3. **Run your desired script** (see our demo) using Python:
 
 ```
 import python_motion_planning as pmp
