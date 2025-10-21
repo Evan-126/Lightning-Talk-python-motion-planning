@@ -29,12 +29,7 @@ This repository demonstrates Python-based grid and map path planning using the *
 conda create -n pmp python=3.10
 conda activate pmp
 ```
-**Note: It is a common issue on Windows that the conda activate command fails, stating "conda init must be run first", and then conda init command gives no change. 
 
-In this case, Open PowerShell as Administrator and run:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Then fully close and reopen powershell and try again. 
-**
 Then install the package:
 
 ```
