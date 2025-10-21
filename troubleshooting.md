@@ -6,4 +6,4 @@
   Then fully close and reopen powershell and try `conda activate pmp` again. 
 
 - Be totally sure you have python-motion-planning version 1.1.1 installed, and NOT version 2.0.dev1
-  can ensure this on download by running `pip install python-motion-planning==1.1.1` instead of simply `pip install python-motion-planning`
+  You can ensure this on download by running `pip install python-motion-planning==1.1.1` instead of simply `pip install python-motion-planning`
